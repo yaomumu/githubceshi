@@ -1,0 +1,44 @@
+git首次使用方法：
+先在本地建立一个git提交的文件夹
+在GitHub上新建一个项目，与文件夹对应
+打开gitbash#使用时打开文件夹右键点击
+
+1、配置用户
+git config ‐‐global user.name "用户名"
+git config ‐‐global user.email 邮箱地址
+
+2、查看仓库状态
+git status
+第一次使用git init
+
+3、增加文件送入缓冲区
+git add test.txt
+git add ‐‐all #添加目录下所有文件
+删除增加
+git rm --cached
+
+4、提交文件到本地仓库
+git commit -m "提交信息"
+
+5、下载远程仓库
+配置SSH
+git clone https://github.com/yaomumu/githubceshi.git 
+git clone gh repo clone yaomumu/githubceshi #添加了SSH以后
+
+6、提交远程
+git pull origin master # 把远程最新的代码更新到本地
+git push origin master # 把本地代码推到远程 master 分支
+
+7、删除远程文件
+git pull origin master # 把远程最新的代码更新到本地
+dir #查看文件夹里面文件
+git rm -r --cached git使用操作.txt
+git commit -m "删除已提交文件"
+git push
+
+git config ‐‐list #查看所有配置
+git config ‐‐list ‐‐show‐origin #查看配置以及所在文件
+git log#打印Git仓库提交日志
+ssh -T git@github.com #查看SSH是否起作用
+git branch #查看、添加、删除分支
+git checkout #切换分支、标签
