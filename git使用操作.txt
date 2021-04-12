@@ -1,44 +1,60 @@
-git�״�ʹ�÷�����
-���ڱ��ؽ���һ��git�ύ���ļ���
-��GitHub���½�һ����Ŀ�����ļ��ж�Ӧ
-��gitbash#ʹ��ʱ���ļ����Ҽ����
+git首次使用方法：
+先在本地建立一个git提交的文件夹
+在GitHub上新建一个项目，与文件夹对应
+打开gitbash#使用时打开文件夹右键点击
 
-1�������û�
-git config �\�\global user.name "�û���"
-git config �\�\global user.email �����ַ
+1、配置用户
+git config ‐‐global user.name "用户名"
+git config ‐‐global user.email 邮箱地址
 
-2���鿴�ֿ�״̬
+2、查看仓库状态
 git status
-��һ��ʹ��git init
+第一次使用git init
 
-3�������ļ����뻺����
+3、增加文件送入缓冲区
 git add test.txt
-git add �\�\all #����Ŀ¼�������ļ�
-ɾ������
+git add ‐‐all #添加目录下所有文件
+删除增加
 git rm --cached
 
-4���ύ�ļ������زֿ�
-git commit -m "�ύ��Ϣ"
+4、提交文件到本地仓库
+git commit -m "提交信息"
 
-5������Զ�ֿ̲�
-����SSH
+5、下载远程仓库
+配置SSH
 git clone https://github.com/yaomumu/githubceshi.git 
-git clone gh repo clone yaomumu/githubceshi #������SSH�Ժ�
+git clone gh repo clone yaomumu/githubceshi #添加了SSH以后
 
-6���ύԶ��
-git pull origin master # ��Զ�����µĴ�����µ�����
-git push origin master # �ѱ��ش����Ƶ�Զ�� master ��֧
+6、提交远程
+git pull origin master # 把远程最新的代码更新到本地
+git push origin master # 把本地代码推到远程 master 分支
 
-7��ɾ��Զ���ļ�
-git pull origin master # ��Զ�����µĴ�����µ�����
-dir #�鿴�ļ��������ļ�
-git rm -r --cached gitʹ�ò���.txt
-git commit -m "ɾ�����ύ�ļ�"
+7、删除远程文件
+git pull origin master # 把远程最新的代码更新到本地
+dir #查看文件夹里面文件
+git rm -r --cached git使用操作.txt
+git commit -m "删除已提交文件"
 git push
 
-git config �\�\list #�鿴��������
-git config �\�\list �\�\show�\origin #�鿴�����Լ������ļ�
-git log#��ӡGit�ֿ��ύ��־
-ssh -T git@github.com #�鿴SSH�Ƿ�������
-git branch #�鿴�����ӡ�ɾ����֧
-git checkout #�л���֧����ǩ
+git config ‐‐list #查看所有配置
+git config ‐‐list ‐‐show‐origin #查看配置以及所在文件
+git log#打印Git仓库提交日志
+ssh -T git@github.com #查看SSH是否起作用
+git branch #查看、添加、删除分支
+git checkout #切换分支、标签
+
+---------------------------------------------------------------------------------------------------
+VScode如何使用Git
+打开文件后，显示文件：M修改、D删除、U新添加
+选中文件夹文件可以对比前后修改的区别
+文件旁边的+号暂存修改
+点击源代码管理的对号，输入提交信息，进行提交
+再点击源代码管理的更多，选择推送，更新远程端
+
+---------------------------------------------------------------------------------------------------
+VScode如何使用Git
+打开文件后，显示文件：M修改、D删除、U新添加
+选中文件夹文件可以对比前后修改的区别
+文件旁边的+号暂存修改
+点击源代码管理的对号，输入提交信息，进行提交
+再点击源代码管理的更多，选择推送，更新远程端
