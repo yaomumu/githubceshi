@@ -1,3 +1,0 @@
-git remote add origin https://github.com/yaomumu/githubceshi.git
-git pull origin master
-git pull -rebase origin master From https://github.com/yaomumu/githubceshi
